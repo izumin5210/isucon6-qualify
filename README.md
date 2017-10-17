@@ -35,3 +35,19 @@
 
 http://monoroch.net/kinshi/  
 http://monoroch.net/kinshi/kinshi.csv
+
+
+## ベンチマーカを準備する
+
+```sh
+$ # go を install する (以下 例)
+$ wget https://storage.googleapis.com/golang/go1.9.1.linux-amd64.tar.gz
+$ sudo tar -C /usr/local -xzf go1.9.1.linux-amd64.tar.gz
+$ export PATH=/usr/local/go/bin:$PATH
+
+$ go get github.com/isucon/isucon6-qualify/bench
+$ cd ~/go/src/github.com/isucon/isucon6-qualify/bench
+$ make
+
+$ ./isucon6q/isucon6q-bench -h
+```
