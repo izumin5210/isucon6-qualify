@@ -11,7 +11,7 @@ apt remove -y snapd
 git config --global user.name "isucon"
 git config --global user.email "isucon@isucon.net"
 
-git clone git@github.com:isucon/isucon6-qualify /tmp/isucon6-qualifier
+git clone https://github.com/isucon/isucon6-qualify /tmp/isucon6-qualifier
 cd /tmp/isucon6-qualifier/provisioning/image/ansible
 PYTHONUNBUFFERED=1 ANSIBLE_FORCE_COLOR=true ansible-playbook -i localhost, *.yml --connection=local -t dev
 cd /tmp/isucon6-qualifier/provisioning/image
