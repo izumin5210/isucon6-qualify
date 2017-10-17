@@ -8,7 +8,6 @@ apt update
 apt install -y --no-install-recommends ansible git aptitude
 apt remove -y snapd
 
-export HOME=/root
 git config --global user.name "isucon"
 git config --global user.email "isucon@isucon.net"
 
