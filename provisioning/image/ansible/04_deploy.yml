@@ -57,9 +57,8 @@
   tasks:
     - copy: src=../../../bin/ dest=/home/isucon/bin owner=isucon group=isucon mode=755
     - copy: src=../files/env.sh dest=/home/isucon/env.sh owner=isucon group=isucon mode=755
-    - unarchive:
-        copy=no
-        src=https://isucon6qimage.example.com/isucon6q/webapp.tar.gz
+    - copy:
+        src=../../../webapp
         dest=/home/isucon/
         creates=/home/isucon/webapp
         owner=isucon
